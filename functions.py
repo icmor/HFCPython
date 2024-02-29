@@ -32,7 +32,7 @@ def longest_pal(s):
 
 def is_prime(n):
     """Function that returns whether n is a prime number or not."""
-    for i in range(2, int(math.sqrt(n))):
+    for i in range(2, int(math.sqrt(n)) + 1):
         if not n % i:
             return False
     return True
